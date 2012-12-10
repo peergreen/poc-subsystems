@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.peergreen.subsystems</groupId>
+    <artifactId>subsystems</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>ipojo-outside-application</artifactId>
+  <packaging>esa</packaging>
+
+  <dependencies>
+    <dependency>
+        <groupId>com.peergreen.subsystems</groupId>
+        <artifactId>hello</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.ipojo</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.aries</groupId>
+            <artifactId>esa-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+  </build>
+</project>

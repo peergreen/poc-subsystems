@@ -1,0 +1,8 @@
+Subsystem-ManifestVersion: 1
+Subsystem-SymbolicName: com.peergreen.subsystems.ipojo-outside-application
+Subsystem-Version: 0.0.1.SNAPSHOT
+Subsystem-Name: ipojo-outside-application
+Subsystem-Description: null
+Subsystem-Content: com.peergreen.subsystems.hello;version="0.0.1.SNAPSHOT"
+Subsystem-Type: osgi.subsystem.application
+Subsystem-ImportService: org.apache.felix.ipojo.Factory; filter:="(factory.state=1)"
