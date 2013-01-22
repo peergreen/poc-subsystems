@@ -9,6 +9,7 @@
   	<module>ipojo-inside-application</module>
   	<module>installer-agent</module>
   	<module>ipojo-outside-application</module>
+    <module>showcase</module>
   </modules>
 
 	<build>
