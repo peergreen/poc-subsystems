@@ -18,9 +18,9 @@ As usual, build is performed by maven:
 The peergreen kernel must be started with support for Aries Subsystems. Subsystems related commands
 also have to be available on the kernel.
 
-Subsystem Commands Maven GAV:
+Install Subsystem Commands Maven (if not already provided):
 
-    com.peergreen.prototype.platform/shelbie-subsystem-commands/1.0-SNAPSHOT
+    >$ install mvn:com.peergreen.shelbie/subsystem-commands/1.0.0-SNAPSHOT
 
 All Subsystems related commands are in the `subsystem` scope.
 
@@ -29,10 +29,13 @@ All Subsystems related commands are in the `subsystem` scope.
 
 Do not forget to hit [tab] key to benefit of auto-completion
 
-### Test subsystems
+### Test Subsystems
 
-    com.peergreen.subsystems.showcase/english-tenant-esa/0.0.1-SNAPSHOT
-    com.peergreen.subsystems.showcase/french-tenant-esa/0.0.1-SNAPSHOT
+    >$ install mvn:com.peergreen.subsystems.showcase/hello-api/0.0.1-SNAPSHOT
+    >$ subsystem:install-subsystem mvn:com.peergreen.subsystems.showcase/english-tenant-esa/0.0.1-SNAPSHOT/esa
+    >$ subsystem:install-subsystem mvn:com.peergreen.subsystems.showcase/french-tenant-esa/0.0.1-SNAPSHOT/esa
+    >$ subsystem:start-subsystem 1
+    >$ subsystem:start-subsystem 2
 
 ## Bugs
 
